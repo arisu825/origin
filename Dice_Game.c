@@ -6,9 +6,16 @@ int func(void);
 
 int main(void){
 
-  srand(time(NULL));
-
+  char name[10];
   int num[2],sum,i;
+
+  printf("What is your name?\n");
+
+  scnaf("%s",name);
+
+  printf("Hello, %s!\n",name);
+
+  srand(time(NULL));
 
   for(i=0;i<2;i++){
     num[i]=0;
