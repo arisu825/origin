@@ -7,7 +7,7 @@ int func(void);
 int main(void){
 
   int num[2],sum,i;
-
+ 
   srand(time(NULL));
 
   for(i=0;i<2;i++){
@@ -29,9 +29,9 @@ int main(void){
   printf("合計値：%d\n",sum);
 
   if(sum>7){
-    printf("%sが勝ちました！\n",name);
+    printf("あなたは勝ちました！\n");
   }else{
-    printf("%sは負けました！\n",name);
+    printf("あなたは負けました！\n");
   }
 
   return 0;
