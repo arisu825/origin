@@ -14,7 +14,7 @@ int main(void){
   scanf("%s",name);
 
   printf("こんにちは%sさん！\n",name);
-
+ 
   srand(time(NULL));
 
   for(i=0;i<2;i++){
