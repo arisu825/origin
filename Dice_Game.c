@@ -6,9 +6,16 @@ int func(void);
 
 int main(void){
 
-  srand(time(NULL));
-
+  char name[10];
   int num[2],sum,i;
+
+  printf("あなたのお名前は何ですか？\n");
+
+  scanf("%s",name);
+
+  printf("こんにちは%sさん！\n",name);
+
+  srand(time(NULL));
 
   for(i=0;i<2;i++){
     num[i]=0;
@@ -27,6 +34,12 @@ int main(void){
   }
   
   printf("合計値：%d\n",sum);
+
+  if(sum>7){
+    printf("%sが勝ちました！\n",name);
+  }else{
+    printf("%sは負けました！\n",name);
+  }
 
   return 0;
   
