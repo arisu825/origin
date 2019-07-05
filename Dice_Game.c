@@ -6,14 +6,7 @@ int func(void);
 
 int main(void){
 
-  char name[10];
   int num[2],sum,i;
-
-  printf("あなたのお名前は何ですか？\n");
-
-  scanf("%s",name);
-
-  printf("こんにちは%sさん！\n",name);
 
   srand(time(NULL));
 
