@@ -9,11 +9,11 @@ int main(void){
   char name[10];
   int num[2],sum,i;
 
-  printf("What is your name?\n");
+  printf("あなたのお名前は何ですか？\n");
 
-  scnaf("%s",name);
+  scanf("%s",name);
 
-  printf("Hello, %s!\n",name);
+  printf("こんにちは%sさん！\n",name);
 
   srand(time(NULL));
 
